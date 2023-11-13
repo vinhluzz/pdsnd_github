@@ -17,5 +17,5 @@ In this project, you will use data provided by Motivate, a bike share system pro
 bikeshare_2.py.
 
 ### Credits
-vinhth5@fpt.com.
+vinhth5@fpt.com, Udacity.
 
