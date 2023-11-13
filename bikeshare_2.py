@@ -216,7 +216,7 @@ def user_stats(df):
     most_recent = int(df["Birth Year"].max())
     print("Most recent: ", most_recent)
     
-    # Ignore if Birth Year na
+    # Ignore if Birth Year is na
     year_stats = df["Birth Year"].value_counts(dropna=True)
     most_common_year_of_birth = year_stats.idxmax()
     print("Most common year of birth:", int(most_common_year_of_birth))
