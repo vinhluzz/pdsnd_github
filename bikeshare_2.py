@@ -201,11 +201,11 @@ def user_stats(df):
     print('\nCalculating User Stats...\n')
     start_time = time.time()
 
-    # Display counts of user types
+    # Display counts of user types and ignore na
     user_types = df["User Type"].value_counts(dropna=True)
     print(user_types)
 
-    # Display counts of gender
+    # Display counts of gender and ignore na
     genders = df["Gender"].value_counts(dropna=True)
     print(genders)
 
@@ -216,6 +216,7 @@ def user_stats(df):
     most_recent = int(df["Birth Year"].max())
     print("Most recent: ", most_recent)
     
+    # Ignore if Birth Year is na
     year_stats = df["Birth Year"].value_counts(dropna=True)
     most_common_year_of_birth = year_stats.idxmax()
     print("Most common year of birth:", int(most_common_year_of_birth))
